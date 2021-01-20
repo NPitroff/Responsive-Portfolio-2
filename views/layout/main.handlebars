@@ -1,7 +1,61 @@
+<!DOCTYPE html>>
+<html lang="en">
+{{!-- scripts and stylesheets --}}
+
 <head>
-  <meta charset="UTF-8">
-  <title>Potluck Party</title>
-  <link rel="stylesheet" href="/public/stylesheets/style.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <script src="/public/javascript/handlebars-v4.7.6.js"></script>
+    <meta charset="UTF-8">
+    <title>Nicolai's Portfolio</title>
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/public/javascript/handlebars-v4.7.6.js"></script>
 </head>
+
+<body>
+    <header>
+        <h1>Nicolai's Portfolio</h1>
+    </header>
+    {{!-- nav bar for links --}}
+    <nav>
+        <a href="https://www.linkedin.com/in/nicolaipitroff">
+            <img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="My Linked In" id="myLink">
+        </a>
+        <a href="https://github.com/NPitroff" id="myGit">
+            <img src="https://avatars0.githubusercontent.com/u/9919?s=280&v=4" alt="My Github" id="myGit">
+        </a>
+        <a href="/">Home</a>
+        <a href="/bio">Biography</a>
+        <a href="/contact">Contact Me</a>
+        <button onclick="dropdownFunction()" class="dropbtn">My Project Code Files</button>
+        <div id="gitDropdown" class="dropdown-content">
+            <a href="https://github.com/NPitroff/Responsive-Portfolio">My Portfolio</a>
+            <a href="https://github.com/NPitroff/Password_Generator.git">Password_Generator</a>
+            <a href="https://github.com/NPitroff/Horiseon-Semantic-Code.git">Semantic Code</a>
+            <a href="https://github.com/NPitroff/Nicolai-s-Javascript-Quiz.git">Javascript_Quiz</a>
+            <a href="https://github.com/NPitroff/Nicolai-workplace-calendar.git">Workplace Calendar</a>
+            <a href="https://github.com/NPitroff/Nicolai-Weather-Map.git">Weather Map</a>
+            <a href="https://github.com/NPitroff/Nicolai_Node_ReadMe.git">Node Readme Generator</a>
+            <a href="https://github.com/NPitroff/Employee-Template-Generator.git">Employee Template Generator</a>
+        </div>
+        <button onclick="secondDownFunction()" class="depbtn">My Deployed Projects</button>
+        <div id="depDropdown" class="depdown-content">
+            <a href="https://npitroff.github.io/Responsive-Portfolio/">My Portfolio</a>
+            <a href="https://npitroff.github.io/Password_Generator/">Password_Generator</a>
+            <a href="https://npitroff.github.io/Horiseon-Semantic-Code/">Semantic Code</a>
+            <a href="https://npitroff.github.io/Nicolai-s-Javascript-Quiz/">Javascript_Quiz</a>
+            <a href="https://npitroff.github.io/Nicolai-workplace-calendar/">Workplace Calendar</a>
+            <a href="https://npitroff.github.io/Nicolai-Weather-Map/">Weather Map</a>
+            <a href="https://drive.google.com/file/d/1nTEvnE4ZEIFR-lZ31UnWpNsnm2Hivzb8/view">Node Readme Generator
+                Demo</a>
+            <a href="https://drive.google.com/file/d/10JsoKQgLDVXhFSD7boNyP5GkBH4Waev1/view">Employee Template Generator
+                Demo</a>
+        </div>
+    </nav>
+    <main>
+        <div>
+            {{{body}}}
+        </div>
+    </main>
+
+</body>
+
+</html>

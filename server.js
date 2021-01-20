@@ -8,7 +8,7 @@ const path = require('path');
 
 // Sets up the Express App
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Describe what the following two lines of code are doing.
 // The following two lines of code are setting Handlebars.js as the default template engine.
